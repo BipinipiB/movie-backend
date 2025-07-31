@@ -3,8 +3,8 @@
     public class Movie
     {
         public int MovieId { get; set; }
-        public string Title { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public string Releaseyear { get; set; } = string.Empty;
+        public string Title { get; set; } 
+        public string Description { get; set; }
+        public DateTime ReleaseDate { get; set; }
     }
 }

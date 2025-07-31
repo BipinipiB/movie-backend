@@ -16,7 +16,8 @@ namespace movie_backend.Controllers
         }
 
         // GET: api/movieproxy/popular
-        [HttpGet("popular")]
+        // this added "/popular" to the base route
+        [HttpGet("popular")] 
         public async Task<IActionResult> GetPopularMovies()
         {
             var movies = await _tmdbService.GetPopularMoviesAsync();
@@ -30,7 +31,6 @@ namespace movie_backend.Controllers
             var results = await _tmdbService.SearchMoviesAsync(query);
             return Ok(results);
         }
-
 
     }
 }
