@@ -19,4 +19,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MovieApp.DataAccess\MovieApp.DataAccess.csproj" />
+    <ProjectReference Include="..\MovieApp.Models\MovieApp.Models.csproj" />
+    <ProjectReference Include="..\MovieApp.Service\MovieApp.Services.csproj" />
+    <ProjectReference Include="..\MovieApp.Utility\MovieApp.Utility.csproj" />
+  </ItemGroup>
+
 </Project>

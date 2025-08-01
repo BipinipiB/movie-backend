@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "movie-backend", "movie-backend.csproj", "{40C719C6-43B1-494F-BA3E-BC92D58BB92E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.API", "MovieApp.API.csproj", "{40C719C6-43B1-494F-BA3E-BC92D58BB92E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.Services", "..\MovieApp.Service\MovieApp.Services.csproj", "{7DEF491A-D28C-4360-9AFD-3642B05782F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.DataAccess", "..\MovieApp.DataAccess\MovieApp.DataAccess.csproj", "{843F404E-2638-4BB7-8124-EF41C8EF95D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.Models", "..\MovieApp.Models\MovieApp.Models.csproj", "{B99F3A11-73D1-41BC-9A25-3CDDB6CBBD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApp.Utility", "..\MovieApp.Utility\MovieApp.Utility.csproj", "{37B14CF8-0CF4-41C4-AE58-9C66A083B692}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{40C719C6-43B1-494F-BA3E-BC92D58BB92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C719C6-43B1-494F-BA3E-BC92D58BB92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C719C6-43B1-494F-BA3E-BC92D58BB92E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DEF491A-D28C-4360-9AFD-3642B05782F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEF491A-D28C-4360-9AFD-3642B05782F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEF491A-D28C-4360-9AFD-3642B05782F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEF491A-D28C-4360-9AFD-3642B05782F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843F404E-2638-4BB7-8124-EF41C8EF95D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843F404E-2638-4BB7-8124-EF41C8EF95D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843F404E-2638-4BB7-8124-EF41C8EF95D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843F404E-2638-4BB7-8124-EF41C8EF95D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99F3A11-73D1-41BC-9A25-3CDDB6CBBD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99F3A11-73D1-41BC-9A25-3CDDB6CBBD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99F3A11-73D1-41BC-9A25-3CDDB6CBBD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99F3A11-73D1-41BC-9A25-3CDDB6CBBD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B14CF8-0CF4-41C4-AE58-9C66A083B692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B14CF8-0CF4-41C4-AE58-9C66A083B692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B14CF8-0CF4-41C4-AE58-9C66A083B692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B14CF8-0CF4-41C4-AE58-9C66A083B692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
