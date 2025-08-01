@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using movie_backend.DataAccess;
 using movie_backend.Services;
+using MovieApp.DataAccess.Repository.IRepository;
+using MovieApp.DataAccess.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +12,15 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-//register the HTTPclient..this tells us call TMDB
-builder.Services.AddHttpClient<TMDBService>();
+////register the HTTPclient..this tells us call TMDB
+//builder.Services.AddHttpClient<TMDBService>();
+
+//register the TMDBRepository with the ITMDBRepository interface
+builder.Services.AddHttpClient<TMDBRepository>();
+
+
+//register the TMDBService
+builder.Services.AddScoped<TMDBService>();
 
 //register swagger services
 builder.Services.AddEndpointsApiExplorer();
