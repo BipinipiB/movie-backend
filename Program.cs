@@ -16,11 +16,18 @@ builder.Services.AddOpenApi();
 //builder.Services.AddHttpClient<TMDBService>();
 
 //register the TMDBRepository with the ITMDBRepository interface
+//AddHttpsClient becasuee this interface is used to call TMDB API
 builder.Services.AddHttpClient<TMDBRepository>();
 
 
 //register the TMDBService
 builder.Services.AddScoped<TMDBService>();
+
+//register the IUserRepository with the UserRepository implementation
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+//register the UserService
+builder.Services.AddScoped<UserService>();
 
 //register swagger services
 builder.Services.AddEndpointsApiExplorer();
