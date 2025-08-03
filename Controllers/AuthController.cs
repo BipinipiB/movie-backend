@@ -31,11 +31,23 @@ namespace movie_backend.Controllers
 
             if(validationResult.Success)
             {
-                return Ok("User registered successfully");
+                //return Ok("User registered successfully");
+
+                return Ok(new
+                {
+                    message = "User registered successfully",
+                 
+                });
             }
             else
             {
-                return BadRequest(validationResult.ErrorMessage);
+               // return BadRequest(validationResult.ErrorMessage);
+
+                return BadRequest(new
+                {
+                    message = validationResult.ErrorMessage,
+
+                });
             }
 
         }
