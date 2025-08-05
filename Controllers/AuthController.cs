@@ -57,14 +57,23 @@ namespace movie_backend.Controllers
         public async Task<IActionResult> Login(LoginDto dto)
         {
             var validationResult = await _userService.AuthenticateAsync(dto);
+            
+            Console.WriteLine("Identifier: " + dto.Identifier);
+            Console.WriteLine("Password: " + dto.Password);
 
-            if(!validationResult.Success)
+
+            if (!validationResult.Success)
             {
                 return Unauthorized(validationResult.ErrorMessage);
             }
             else
             {
-                return Ok("Login successful");
+                return Ok(new
+                {
+                    message = "Login Successfulk",
+                    code = 200
+                });
+                
             }
 
         }
